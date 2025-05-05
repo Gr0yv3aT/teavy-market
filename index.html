@@ -1,80 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TEAVY™ Market | Community Barter & Wellness</title>
+  <meta name="description" content="TEAVY™ Market is an intentional wellness and barter marketplace with events, tea, eco-laundry services, and plant-based community offerings.">
+  <meta name="theme-color" content="#8e24aa" />
+  <title>TEAVY™ Market</title>
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.png" type="image/png">
-  <meta name="description" content="TEAVY™ Market – A peer-to-peer wellness and barter marketplace rooted in vitality, spiritual commerce, and holistic abundance.">
-  <meta name="keywords" content="TEAVY, wellness marketplace, barter, holistic tea, soundbath, community events, yoga, eco-laundry, PMA">
-  <meta name="theme-color" content="#8e24aa">
 </head>
 <body>
-  <header class="header">
-    <img src="logo.png" alt="TEAVY Logo" class="logo" />
-    <nav class="nav-links">
-      <a href="/">Home</a>
-      <a href="#market">Marketplace</a>
-      <a href="#events">Events</a>
-      <a href="#contact">Contact</a>
-      <a href="https://teavy.org" target="_blank">TEAVY.org</a>
-      <button class="wallet-btn">🔐 Connect Wallet</button>
-    </nav>
+  <header>
+    <img src="assets/logo.png" alt="TEAVY Logo" class="logo" />
+    <h1>Welcome to TEAVY™ Market</h1>
+    <p class="tagline">An autonomous peer-to-peer wellness and barter marketplace.<br>Rooted in vitality, spiritual commerce, and energetic harmony.</p>
+    <a href="#join" class="cta-button">Join the PMA</a>
   </header>
 
-  <main class="content">
-    <section class="hero">
-      <h1>Welcome to TEAVY™ Market</h1>
-      <p>An autonomous peer-to-peer wellness and barter marketplace.<br>Rooted in vitality, spiritual commerce, and energetic harmony.</p>
-      <a href="#market" class="btn-primary">Explore Marketplace</a>
+  <main>
+    <section class="placeholder-section">
+      <h2>Coming Soon: Soltare Eco-Laundry</h2>
+      <div class="placeholder-image">[Eco-Laundry Preview Image]</div>
     </section>
 
-    <section id="market" class="service-section">
+    <section class="placeholder-section">
+      <h2>Upcoming TEA & Soundbath Ceremonies</h2>
+      <div class="placeholder-image">[Events Preview Block]</div>
+    </section>
+
+    <section class="placeholder-section">
       <h2>Community Marketplace</h2>
-      <div class="product-preview">
-        <img src="logo.png" alt="Product" class="preview-img">
-        <p>Blue Lotus + Rose Tea (Ceremonial Blend)</p>
-        <div class="product-buttons">
-          <button class="btn-secondary">🔁 Join to Barter</button>
-          <button class="btn-secondary">💳 Learn More</button>
-        </div>
-      </div>
+      <div class="placeholder-image">[Product Grid Placeholder]</div>
     </section>
 
-    <section id="events" class="service-section">
-      <h2>Upcoming Tea & Soundbath Ceremonies</h2>
-      <p>Curated community events — yoga, live music, potlucks, and more.</p>
-    </section>
-
-    <section class="service-section">
-      <h2>Soltare Eco-Laundry (Coming Soon)</h2>
-      <p>Solar-powered modernized laundry facility supporting eco-living.</p>
-    </section>
-
-    <section id="contact" class="contact-section">
+    <section class="placeholder-section" id="join">
       <h2>Contact Us</h2>
-      <form action="mailto:info@teavy.market" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn-primary">Send Message</button>
+      <form class="contact-form" method="POST" action="https://formspree.io/f/mnqedrpg">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="_replyto" placeholder="Email" required />
+        <textarea name="message" placeholder="Your message" required></textarea>
+        <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 TEAVY™ and its affiliates. All rights reserved.</p>
-    <a href="/terms.html">Terms</a> | <a href="/privacy.html">Privacy</a> | <a href="/disclaimer.html">Disclaimer</a>
-    <div class="donate"><a href="#donate" class="btn-secondary">💜 Donate</a></div>
+  <footer>
+    <p>© 2025 TEAVY™ and its affiliates. All rights reserved.</p>
+    <nav>
+      <a href="#">Privacy Policy</a> | 
+      <a href="#">Terms</a> | 
+      <a href="#">Legal Disclaimer</a>
+    </nav>
   </footer>
-
-  <script>
-    document.addEventListener('contextmenu', event => event.preventDefault());
-    document.addEventListener('keydown', e => {
-      if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) e.preventDefault();
-    });
-  </script>
 </body>
 </html>
